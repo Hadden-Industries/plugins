@@ -9,12 +9,12 @@ Each plugin bundles a skill's instructions, references, and any helper scripts.
 Open a plugin's instructions for its requirements and usage.
 Use its name in the installation commands below.
 
-| Plugin                                                                                                                                          | What you can do                                                    |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [committing-to-git](plugins/committing-to-git/skills/committing-to-git/SKILL.md)                                                                | Draft messages and prepare, create, and verify signed Git commits. |
-| [defining-concepts](plugins/defining-concepts/skills/defining-concepts/SKILL.md)                                                                | Define, assess, and refine concepts and terminology.               |
-| [naming-objects-in-software-engineering](plugins/naming-objects-in-software-engineering/skills/naming-objects-in-software-engineering/SKILL.md) | Choose precise names for software artifacts.                       |
-| [reading-epubs](plugins/reading-epubs/skills/reading-epubs/SKILL.md)                                                                            | Read EPUB content with the accompanying conversion workflow.       |
+| Plugin                                                                                                                                  | What you can do                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [committing-to-git](committing-to-git/skills/committing-to-git/SKILL.md)                                                                | Draft messages and prepare, create, and verify signed Git commits. |
+| [defining-concepts](defining-concepts/skills/defining-concepts/SKILL.md)                                                                | Define, assess, and refine concepts and terminology.               |
+| [naming-objects-in-software-engineering](naming-objects-in-software-engineering/skills/naming-objects-in-software-engineering/SKILL.md) | Choose precise names for software artifacts.                       |
+| [reading-epubs](reading-epubs/skills/reading-epubs/SKILL.md)                                                                            | Read EPUB content with the accompanying conversion workflow.       |
 
 ## Install a plugin
 
@@ -50,7 +50,7 @@ Clone the catalog, then install the plugin from its local directory.
 ```sh
 git clone https://github.com/Hadden-Industries/plugins.git
 cd plugins
-agy plugin install ./plugins/committing-to-git
+agy plugin install ./committing-to-git
 ```
 
 [Antigravity plugin documentation](https://antigravity.google/docs/plugins/)
@@ -101,4 +101,4 @@ Maintainers apply skill changes in the authoring repository and regenerate the p
 Plugins use the [Mozilla Public License 2.0](LICENSE).
 Each package includes its license and applicable third-party notices.
 
-See the [Git helper's source availability information](plugins/committing-to-git/README.md) to request the corresponding source for its bundled executable.
+See the [Git helper's source availability information](committing-to-git/README.md) to request the corresponding source for its bundled executable.

@@ -6,19 +6,19 @@
   "plugins": [
     {
       "name": "committing-to-git",
-      "source": "./plugins/committing-to-git"
+      "source": "./committing-to-git"
     },
     {
       "name": "defining-concepts",
-      "source": "./plugins/defining-concepts"
+      "source": "./defining-concepts"
     },
     {
       "name": "naming-objects-in-software-engineering",
-      "source": "./plugins/naming-objects-in-software-engineering"
+      "source": "./naming-objects-in-software-engineering"
     },
     {
       "name": "reading-epubs",
-      "source": "./plugins/reading-epubs"
+      "source": "./reading-epubs"
     }
   ]
 }

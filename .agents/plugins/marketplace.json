@@ -8,7 +8,7 @@
       "name": "committing-to-git",
       "source": {
         "source": "local",
-        "path": "./plugins/committing-to-git"
+        "path": "./committing-to-git"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -19,7 +19,7 @@
       "name": "defining-concepts",
       "source": {
         "source": "local",
-        "path": "./plugins/defining-concepts"
+        "path": "./defining-concepts"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -30,7 +30,7 @@
       "name": "naming-objects-in-software-engineering",
       "source": {
         "source": "local",
-        "path": "./plugins/naming-objects-in-software-engineering"
+        "path": "./naming-objects-in-software-engineering"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -41,7 +41,7 @@
       "name": "reading-epubs",
       "source": {
         "source": "local",
-        "path": "./plugins/reading-epubs"
+        "path": "./reading-epubs"
       },
       "policy": {
         "installation": "AVAILABLE",
