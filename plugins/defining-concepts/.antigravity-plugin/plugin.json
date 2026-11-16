@@ -1,0 +1,5 @@
+{
+  "name": "defining-concepts",
+  "description": "Engineers source-grounded concepts and definitions, including definition, revision, audit, comparison, mapping, formalization, multilingual equivalence, and epistemic-governance work. Use for deliberate semantic work on a concept's identity, boundary, designation, reuse, relation, or representation. Do NOT use for casual dictionary lookup, code-symbol naming, product or brand naming, copyediting without semantic work, or implementation-only requests.",
+  "version": "0.1.0-dev.1"
+}

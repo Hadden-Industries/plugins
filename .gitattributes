@@ -1,0 +1,5 @@
+# Preserve the exact generated package and notice bytes from the release inventory.
+.agents/plugins/marketplace.json -text
+.claude-plugin/marketplace.json -text
+plugins/** -text
+README.md text eol=lf

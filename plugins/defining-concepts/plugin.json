@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "defining-concepts",
+  "description": "Engineers source-grounded concepts and definitions, including definition, revision, audit, comparison, mapping, formalization, multilingual equivalence, and epistemic-governance work. Use for deliberate semantic work on a concept's identity, boundary, designation, reuse, relation, or representation. Do NOT use for casual dictionary lookup, code-symbol naming, product or brand naming, copyediting without semantic work, or implementation-only requests.",
+  "author": {
+    "name": "Hadden Industries Ltd"
+  },
+  "license": "MPL-2.0",
+  "repository": "https://github.com/Hadden-Industries/plugins",
+  "version": "0.1.0-dev.1",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Defining Concepts",
+        "shortDescription": "Define and assess concepts and terminology.",
+        "developerName": "Hadden Industries Ltd"
+      }
+    }
+  }
+}

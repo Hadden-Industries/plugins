@@ -1,0 +1,52 @@
+{
+  "name": "hadden-industries-plugins",
+  "interface": {
+    "displayName": "Hadden Industries Plugins"
+  },
+  "plugins": [
+    {
+      "name": "committing-to-git",
+      "source": {
+        "source": "local",
+        "path": "./plugins/committing-to-git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    },
+    {
+      "name": "defining-concepts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/defining-concepts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    },
+    {
+      "name": "naming-objects-in-software-engineering",
+      "source": {
+        "source": "local",
+        "path": "./plugins/naming-objects-in-software-engineering"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    },
+    {
+      "name": "reading-epubs",
+      "source": {
+        "source": "local",
+        "path": "./plugins/reading-epubs"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

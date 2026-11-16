@@ -1,0 +1,24 @@
+{
+  "name": "hadden-industries-plugins",
+  "owner": {
+    "name": "Hadden Industries Ltd"
+  },
+  "plugins": [
+    {
+      "name": "committing-to-git",
+      "source": "./plugins/committing-to-git"
+    },
+    {
+      "name": "defining-concepts",
+      "source": "./plugins/defining-concepts"
+    },
+    {
+      "name": "naming-objects-in-software-engineering",
+      "source": "./plugins/naming-objects-in-software-engineering"
+    },
+    {
+      "name": "reading-epubs",
+      "source": "./plugins/reading-epubs"
+    }
+  ]
+}

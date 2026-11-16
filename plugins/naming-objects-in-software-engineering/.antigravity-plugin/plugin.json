@@ -1,0 +1,5 @@
+{
+  "name": "naming-objects-in-software-engineering",
+  "description": "Create, assess, and refactor semantically precise, ecosystem-conformant names for programming and data artefacts. Use whenever naming or renaming files, directories, packages, modules, types, functions, methods, parameters, arguments, variables, fields, properties, constants, APIs, CLI commands/options, environment variables, or database objects; and during code review when naming quality, consistency, ambiguity, or terminology is relevant. Enforces conceptual discrimination before casing and separators.",
+  "version": "0.1.0-dev.2"
+}
