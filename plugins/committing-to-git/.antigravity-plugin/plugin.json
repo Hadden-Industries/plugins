@@ -1,5 +1,5 @@
 {
   "name": "committing-to-git",
   "description": "Drafts messages, creates and verifies signed commits, and preflights authorized direct or GitHub PR publication. Use for message drafts, new commits, or their delivery. Excludes history amendment and existing merge, rebase, cherry-pick, or revert operations.",
-  "version": "0.2.0-rc.5"
+  "version": "0.2.0-rc.6"
 }
