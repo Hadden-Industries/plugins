@@ -38,22 +38,34 @@
           "minLength": 1
         },
         "assets": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "manifest": {
           "type": "string",
           "minLength": 1
         },
         "pandoc_log": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "style_map": {
           "description": "Generated Lua module mapping the book's CSS classes to Markdown semantics; null only if a cached result predates it.",
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "toc": {
           "description": "Table of contents extracted from the book's navigation and resolved to anchors inside the Markdown; Pandoc discards the navigation document itself.",
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "toc_entries": {
           "type": "integer",
@@ -85,7 +97,11 @@
     "error": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["schemaVersion", "status", "error"],
+      "required": [
+        "schemaVersion",
+        "status",
+        "error"
+      ],
       "properties": {
         "schemaVersion": {
           "const": 1
@@ -110,7 +126,10 @@
           "type": "integer"
         },
         "pandoc_log": {
-          "type": ["string", "null"]
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "troubleshooting_reference": {
           "type": "string",

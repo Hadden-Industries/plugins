@@ -49,23 +49,39 @@
       "form": "kebab-case",
       "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["rebuild-index", "validate-ontology"],
-      "invalid_examples": ["rebuild_index", "RebuildIndex"]
+      "valid_examples": [
+        "rebuild-index",
+        "validate-ontology"
+      ],
+      "invalid_examples": [
+        "rebuild_index",
+        "RebuildIndex"
+      ]
     },
     "cli-long-option": {
       "description": "CLI long option including its two-hyphen prefix.",
       "form": "--kebab-case",
       "pattern": "^--[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["--dry-run", "--output-directory"],
-      "invalid_examples": ["-dry-run", "--dry_run", "--DryRun"]
+      "valid_examples": [
+        "--dry-run",
+        "--output-directory"
+      ],
+      "invalid_examples": [
+        "-dry-run",
+        "--dry_run",
+        "--DryRun"
+      ]
     },
     "cpp-constant": {
       "description": "C++ constant under the selected profile.",
       "form": "kPascalCase",
       "pattern": "^k[A-Z][A-Za-z0-9]*$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["kDefaultTimeoutSeconds", "kMaxRetryCount"],
+      "valid_examples": [
+        "kDefaultTimeoutSeconds",
+        "kMaxRetryCount"
+      ],
       "invalid_examples": [
         "DEFAULT_TIMEOUT_SECONDS",
         "k_default_timeout_seconds"
@@ -76,24 +92,42 @@
       "form": "snake_case_",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*_$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["retry_count_", "customer_id_"],
-      "invalid_examples": ["retry_count", "_retry_count"]
+      "valid_examples": [
+        "retry_count_",
+        "customer_id_"
+      ],
+      "invalid_examples": [
+        "retry_count",
+        "_retry_count"
+      ]
     },
     "cpp-function": {
       "description": "C++ function.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["CustomerRegistry", "CalculateNetAmount"],
-      "invalid_examples": ["customer_registry", "calculateNetAmount"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "CalculateNetAmount"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "calculateNetAmount"
+      ]
     },
     "cpp-header-file": {
       "description": "C++ header filename under the selected underscore profile.",
       "form": "snake_case.h",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*\\.h$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["invoice_parser.h", "customer_registry.h"],
-      "invalid_examples": ["invoice-parser.hpp", "InvoiceParser.h"],
+      "valid_examples": [
+        "invoice_parser.h",
+        "customer_registry.h"
+      ],
+      "invalid_examples": [
+        "invoice-parser.hpp",
+        "InvoiceParser.h"
+      ],
       "notes": [
         "A repository or build system may govern another extension; treat that as a scoped override."
       ]
@@ -103,16 +137,28 @@
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["retry_count", "customer_id"],
-      "invalid_examples": ["retryCount", "CustomerId"]
+      "valid_examples": [
+        "retry_count",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "retryCount",
+        "CustomerId"
+      ]
     },
     "cpp-source-file": {
       "description": "C++ source filename under the selected underscore profile.",
       "form": "snake_case.cc",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*\\.cc$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["invoice_parser.cc", "customer_registry.cc"],
-      "invalid_examples": ["invoice-parser.cc", "InvoiceParser.cpp"],
+      "valid_examples": [
+        "invoice_parser.cc",
+        "customer_registry.cc"
+      ],
+      "invalid_examples": [
+        "invoice-parser.cc",
+        "InvoiceParser.cpp"
+      ],
       "notes": [
         "A repository or build system may govern another extension; treat that as a scoped override."
       ]
@@ -122,55 +168,95 @@
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["CustomerRegistry", "CalculateNetAmount"],
-      "invalid_examples": ["customer_registry", "calculateNetAmount"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "CalculateNetAmount"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "calculateNetAmount"
+      ]
     },
     "cpp-variable": {
       "description": "C++ variable.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Selected Google C++ Style profile",
-      "valid_examples": ["retry_count", "customer_id"],
-      "invalid_examples": ["retryCount", "CustomerId"]
+      "valid_examples": [
+        "retry_count",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "retryCount",
+        "CustomerId"
+      ]
     },
     "csharp-constant": {
       "description": "C# constant.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["CalculateNetAmount", "DefaultTimeoutSeconds"],
-      "invalid_examples": ["calculateNetAmount", "DEFAULT_TIMEOUT_SECONDS"]
+      "valid_examples": [
+        "CalculateNetAmount",
+        "DefaultTimeoutSeconds"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "DEFAULT_TIMEOUT_SECONDS"
+      ]
     },
     "csharp-interface": {
       "description": "C# interface.",
       "form": "I + PascalCase",
       "pattern": "^I[A-Z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["IInvoiceReader", "ICustomerRegistry"],
-      "invalid_examples": ["InvoiceReader", "iInvoiceReader", "I_InvoiceReader"]
+      "valid_examples": [
+        "IInvoiceReader",
+        "ICustomerRegistry"
+      ],
+      "invalid_examples": [
+        "InvoiceReader",
+        "iInvoiceReader",
+        "I_InvoiceReader"
+      ]
     },
     "csharp-local": {
       "description": "C# local variable.",
       "form": "camelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["grossAmount", "customerId"],
-      "invalid_examples": ["gross_amount", "GrossAmount"]
+      "valid_examples": [
+        "grossAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "gross_amount",
+        "GrossAmount"
+      ]
     },
     "csharp-method": {
       "description": "C# method.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["CalculateNetAmount", "DefaultTimeoutSeconds"],
-      "invalid_examples": ["calculateNetAmount", "DEFAULT_TIMEOUT_SECONDS"]
+      "valid_examples": [
+        "CalculateNetAmount",
+        "DefaultTimeoutSeconds"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "DEFAULT_TIMEOUT_SECONDS"
+      ]
     },
     "csharp-namespace": {
       "description": "C# namespace.",
       "form": "PascalCase dot-separated segments",
       "pattern": "^[A-Z][A-Za-z0-9]*(?:\\.[A-Z][A-Za-z0-9]*)*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["Billing.InvoiceProcessing", "HaddenIndustries.Data"],
+      "valid_examples": [
+        "Billing.InvoiceProcessing",
+        "HaddenIndustries.Data"
+      ],
       "invalid_examples": [
         "billing.invoiceProcessing",
         "Billing_InvoiceProcessing"
@@ -181,40 +267,70 @@
       "form": "camelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["grossAmount", "customerId"],
-      "invalid_examples": ["gross_amount", "GrossAmount"]
+      "valid_examples": [
+        "grossAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "gross_amount",
+        "GrossAmount"
+      ]
     },
     "csharp-private-instance-field": {
       "description": "Private or internal C# instance field.",
       "form": "_camelCase",
       "pattern": "^_[a-z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["_clock", "_customerRegistry"],
-      "invalid_examples": ["clock_", "_customer_registry"]
+      "valid_examples": [
+        "_clock",
+        "_customerRegistry"
+      ],
+      "invalid_examples": [
+        "clock_",
+        "_customer_registry"
+      ]
     },
     "csharp-private-static-field": {
       "description": "Private or internal C# static field.",
       "form": "s_camelCase",
       "pattern": "^s_[a-z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["s_cache", "s_customerRegistry"],
-      "invalid_examples": ["_cache", "s_Cache"]
+      "valid_examples": [
+        "s_cache",
+        "s_customerRegistry"
+      ],
+      "invalid_examples": [
+        "_cache",
+        "s_Cache"
+      ]
     },
     "csharp-public-member": {
       "description": "C# public property, field, or event.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["CalculateNetAmount", "DefaultTimeoutSeconds"],
-      "invalid_examples": ["calculateNetAmount", "DEFAULT_TIMEOUT_SECONDS"]
+      "valid_examples": [
+        "CalculateNetAmount",
+        "DefaultTimeoutSeconds"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "DEFAULT_TIMEOUT_SECONDS"
+      ]
     },
     "csharp-type": {
       "description": "C# class, struct, enum, record, or delegate type.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Microsoft .NET conventions",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customerRegistry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "Customer_Registry"
+      ]
     },
     "css-class-bem": {
       "description": "CSS class name using BEM (Block Element Modifier) notation.",
@@ -226,38 +342,64 @@
         "invoice-card__header",
         "invoice-card__header--highlighted"
       ],
-      "invalid_examples": ["invoiceCard", "invoice_card", "invoice-card--"]
+      "invalid_examples": [
+        "invoiceCard",
+        "invoice_card",
+        "invoice-card--"
+      ]
     },
     "css-custom-property": {
       "description": "CSS custom property (variable).",
       "form": "--kebab-case",
       "pattern": "^--[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
       "basis": "W3C CSS Custom Properties Level 1",
-      "valid_examples": ["--color-primary", "--spacing-unit-lg"],
-      "invalid_examples": ["--colorPrimary", "color-primary", "--color_primary"]
+      "valid_examples": [
+        "--color-primary",
+        "--spacing-unit-lg"
+      ],
+      "invalid_examples": [
+        "--colorPrimary",
+        "color-primary",
+        "--color_primary"
+      ]
     },
     "environment-variable": {
       "description": "Environment variable.",
       "form": "UPPER_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["DATABASE_URL", "DEFAULT_TIMEOUT_SECONDS"],
-      "invalid_examples": ["database_url", "DatabaseUrl"]
+      "valid_examples": [
+        "DATABASE_URL",
+        "DEFAULT_TIMEOUT_SECONDS"
+      ],
+      "invalid_examples": [
+        "database_url",
+        "DatabaseUrl"
+      ]
     },
     "generic-directory": {
       "description": "Human-authored directory governed by no more specific ecosystem or tool rule.",
       "form": "kebab-case",
       "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["architecture-decisions", "customer-import"],
-      "invalid_examples": ["architecture_decisions", "ArchitectureDecisions"]
+      "valid_examples": [
+        "architecture-decisions",
+        "customer-import"
+      ],
+      "invalid_examples": [
+        "architecture_decisions",
+        "ArchitectureDecisions"
+      ]
     },
     "generic-file": {
       "description": "Human-authored file governed by no more specific ecosystem or tool rule; validate the complete basename including one or more lowercase extensions.",
       "form": "kebab-case.ext",
       "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:\\.[a-z0-9]+(?:-[a-z0-9]+)*)+$",
       "basis": "Explicit house policy",
-      "valid_examples": ["customer-import-guide.md", "release-notes.en.md"],
+      "valid_examples": [
+        "customer-import-guide.md",
+        "release-notes.en.md"
+      ],
       "invalid_examples": [
         "customer_import_guide.md",
         "CustomerImportGuide.md",
@@ -272,16 +414,29 @@
       "form": "MixedCaps beginning uppercase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Official Go guidance",
-      "valid_examples": ["CustomerID", "ParseInvoice"],
-      "invalid_examples": ["customerID", "Customer_ID"]
+      "valid_examples": [
+        "CustomerID",
+        "ParseInvoice"
+      ],
+      "invalid_examples": [
+        "customerID",
+        "Customer_ID"
+      ]
     },
     "go-identifier": {
       "description": "Go identifier where visibility is not part of this check.",
       "form": "MixedCaps or mixedCaps",
       "pattern": "^[A-Za-z][A-Za-z0-9]*$",
       "basis": "Official Go guidance",
-      "valid_examples": ["CustomerID", "customerID", "ParseInvoice"],
-      "invalid_examples": ["customer_id", "parse-invoice"],
+      "valid_examples": [
+        "CustomerID",
+        "customerID",
+        "ParseInvoice"
+      ],
+      "invalid_examples": [
+        "customer_id",
+        "parse-invoice"
+      ],
       "notes": [
         "The checker cannot establish correct initialism treatment or semantic use of canonical method names."
       ]
@@ -291,63 +446,109 @@
       "form": "shortlowercaseword",
       "pattern": "^[a-z][a-z0-9]*$",
       "basis": "Official Go guidance",
-      "valid_examples": ["invoice", "http"],
-      "invalid_examples": ["invoice_parser", "Invoice"]
+      "valid_examples": [
+        "invoice",
+        "http"
+      ],
+      "invalid_examples": [
+        "invoice_parser",
+        "Invoice"
+      ]
     },
     "go-unexported-identifier": {
       "description": "Unexported Go identifier.",
       "form": "mixedCaps beginning lowercase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Official Go guidance",
-      "valid_examples": ["customerID", "parseInvoice"],
-      "invalid_examples": ["CustomerID", "customer_id"]
+      "valid_examples": [
+        "customerID",
+        "parseInvoice"
+      ],
+      "invalid_examples": [
+        "CustomerID",
+        "customer_id"
+      ]
     },
     "html-data-attribute": {
       "description": "HTML5 custom data attribute.",
       "form": "data-kebab-case",
       "pattern": "^data-[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
       "basis": "W3C HTML5 specification",
-      "valid_examples": ["data-customer-id", "data-status-badge"],
-      "invalid_examples": ["data-customerId", "data_customer_id", "customerId"]
+      "valid_examples": [
+        "data-customer-id",
+        "data-status-badge"
+      ],
+      "invalid_examples": [
+        "data-customerId",
+        "data_customer_id",
+        "customerId"
+      ]
     },
     "java-constant": {
       "description": "Java constant under the selected style guide's semantic definition.",
       "form": "UPPER_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["DefaultTimeoutSeconds", "default_timeout_seconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "DefaultTimeoutSeconds",
+        "default_timeout_seconds"
+      ]
     },
     "java-field": {
       "description": "Java non-constant field.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "java-local": {
       "description": "Java local variable.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "java-method": {
       "description": "Java method.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "java-module": {
       "description": "Java module name under the selected profile.",
       "form": "lowercase dot-separated segments",
       "pattern": "^[a-z][a-z0-9]*(?:\\.[a-z][a-z0-9]*)*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["com.example.billing", "org.example.invoice"],
+      "valid_examples": [
+        "com.example.billing",
+        "org.example.invoice"
+      ],
       "invalid_examples": [
         "com.example.customer_registry",
         "Com.Example.Billing"
@@ -358,7 +559,10 @@
       "form": "lowercase concatenated segments",
       "pattern": "^[a-z][a-z0-9]*(?:\\.[a-z][a-z0-9]*)*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["com.example.customerregistry", "org.example.billing"],
+      "valid_examples": [
+        "com.example.customerregistry",
+        "org.example.billing"
+      ],
       "invalid_examples": [
         "com.example.customer_registry",
         "Com.Example.Billing"
@@ -369,80 +573,141 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "java-type": {
       "description": "Java class, interface, enum, record, or annotation type.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Selected Google Java Style profile",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customerRegistry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "Customer_Registry"
+      ]
     },
     "javascript-class": {
       "description": "JavaScript class or constructor function.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "ECMAScript 2015+ / ecosystem convention",
-      "valid_examples": ["CustomerRegistry", "InvoiceParser"],
-      "invalid_examples": ["customerRegistry", "customer_registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceParser"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "customer_registry"
+      ]
     },
     "javascript-constant": {
       "description": "Module-level JavaScript constant value.",
       "form": "UPPER_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Ecosystem convention",
-      "valid_examples": ["DEFAULT_TIMEOUT_MS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["defaultTimeoutMs", "DefaultTimeoutMs"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_MS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "defaultTimeoutMs",
+        "DefaultTimeoutMs"
+      ]
     },
     "javascript-function": {
       "description": "JavaScript function.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "ECMAScript / ecosystem convention",
-      "valid_examples": ["calculateNetAmount", "findCustomer"],
-      "invalid_examples": ["calculate_net_amount", "CalculateNetAmount"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "findCustomer"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CalculateNetAmount"
+      ]
     },
     "javascript-method": {
       "description": "JavaScript method.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "ECMAScript / ecosystem convention",
-      "valid_examples": ["findCustomer", "calculateNetAmount"],
-      "invalid_examples": ["find_customer", "FindCustomer"]
+      "valid_examples": [
+        "findCustomer",
+        "calculateNetAmount"
+      ],
+      "invalid_examples": [
+        "find_customer",
+        "FindCustomer"
+      ]
     },
     "javascript-module": {
       "description": "JavaScript ESM library or domain module filename.",
       "form": "lowerCamelCase.js or lowerCamelCase.mjs",
       "pattern": "^[a-z][A-Za-z0-9]*\\.(?:js|mjs)$",
       "basis": "Selected modern JavaScript house profile",
-      "valid_examples": ["invoiceParser.js", "customerRegistry.mjs"],
-      "invalid_examples": ["invoice-parser.js", "InvoiceParser.js"]
+      "valid_examples": [
+        "invoiceParser.js",
+        "customerRegistry.mjs"
+      ],
+      "invalid_examples": [
+        "invoice-parser.js",
+        "InvoiceParser.js"
+      ]
     },
     "javascript-private-field": {
       "description": "ECMAScript private class field or method.",
       "form": "#lowerCamelCase",
       "pattern": "^#[a-z][A-Za-z0-9]*$",
       "basis": "ECMAScript 2022 private class fields",
-      "valid_examples": ["#cache", "#parseHeader"],
-      "invalid_examples": ["_cache", "#_cache", "#parse_header"]
+      "valid_examples": [
+        "#cache",
+        "#parseHeader"
+      ],
+      "invalid_examples": [
+        "_cache",
+        "#_cache",
+        "#parse_header"
+      ]
     },
     "javascript-property": {
       "description": "JavaScript object property.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "ECMAScript / ecosystem convention",
-      "valid_examples": ["customerId", "timeoutMs"],
-      "invalid_examples": ["customer_id", "CustomerId"]
+      "valid_examples": [
+        "customerId",
+        "timeoutMs"
+      ],
+      "invalid_examples": [
+        "customer_id",
+        "CustomerId"
+      ]
     },
     "javascript-script": {
       "description": "Standalone automation or build script in JavaScript.",
       "form": "kebab-case.mjs or kebab-case.js",
       "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*\\.(?:mjs|js)$",
       "basis": "Explicit house policy",
-      "valid_examples": ["rebuild-index.mjs", "verify-bundle.js"],
-      "invalid_examples": ["rebuildIndex.mjs", "rebuild_index.js"]
+      "valid_examples": [
+        "rebuild-index.mjs",
+        "verify-bundle.js"
+      ],
+      "invalid_examples": [
+        "rebuildIndex.mjs",
+        "rebuild_index.js"
+      ]
     },
     "javascript-test-file": {
       "description": "JavaScript test file (unit, faceted, cross-runner, or architecture seam).",
@@ -454,46 +719,76 @@
         "domainBoundaries.architecture.test.js",
         "workflow.node.test.js"
       ],
-      "invalid_examples": ["invoice_parser_test.txt", "test-invoice.spec"]
+      "invalid_examples": [
+        "invoice_parser_test.txt",
+        "test-invoice.spec"
+      ]
     },
     "javascript-variable": {
       "description": "JavaScript variable.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "ECMAScript / ecosystem convention",
-      "valid_examples": ["grossAmount", "customerId"],
-      "invalid_examples": ["gross_amount", "GrossAmount"]
+      "valid_examples": [
+        "grossAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "gross_amount",
+        "GrossAmount"
+      ]
     },
     "kotlin-constant": {
       "description": "Kotlin compile-time or otherwise conventional true constant.",
       "form": "UPPER_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["DefaultTimeoutSeconds", "default_timeout_seconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "DefaultTimeoutSeconds",
+        "default_timeout_seconds"
+      ]
     },
     "kotlin-function": {
       "description": "Kotlin function.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "kotlin-local": {
       "description": "Kotlin local variable.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "kotlin-package": {
       "description": "Dot-separated Kotlin package name.",
       "form": "lowercase segments without underscores",
       "pattern": "^[a-z][a-z0-9]*(?:\\.[a-z][a-z0-9]*)*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["com.example.customerregistry", "org.example.billing"],
+      "valid_examples": [
+        "com.example.customerregistry",
+        "org.example.billing"
+      ],
       "invalid_examples": [
         "com.example.customer_registry",
         "Com.Example.Billing"
@@ -504,55 +799,94 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "kotlin-private-backing-property": {
       "description": "Kotlin private backing property paired with a public conceptual property.",
       "form": "_lowerCamelCase",
       "pattern": "^_[a-z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["_table", "_customerId"],
-      "invalid_examples": ["table_", "_customer_id"]
+      "valid_examples": [
+        "_table",
+        "_customerId"
+      ],
+      "invalid_examples": [
+        "table_",
+        "_customer_id"
+      ]
     },
     "kotlin-property": {
       "description": "Kotlin property.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "kotlin-type": {
       "description": "Kotlin class, object, interface, enum, annotation, or type alias.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Official Kotlin coding conventions",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customerRegistry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "Customer_Registry"
+      ]
     },
     "python-class": {
       "description": "Python class or exception type.",
       "form": "PascalCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "PEP 8",
-      "valid_examples": ["CustomerRegistry", "InvoiceParseError"],
-      "invalid_examples": ["customer_registry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceParseError"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "Customer_Registry"
+      ]
     },
     "python-constant": {
       "description": "Module-level Python constant.",
       "form": "UPPER_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["default_timeout_seconds", "DefaultTimeoutSeconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "default_timeout_seconds",
+        "DefaultTimeoutSeconds"
+      ]
     },
     "python-exception": {
       "description": "Python exception class ending with Error.",
       "form": "PascalCase ending with Error",
       "pattern": "^[A-Z][A-Za-z0-9]*Error$",
       "basis": "PEP 8",
-      "valid_examples": ["InvoiceNotFoundError", "ValidationError"],
+      "valid_examples": [
+        "InvoiceNotFoundError",
+        "ValidationError"
+      ],
       "invalid_examples": [
         "InvoiceNotFoundException",
         "invoice_not_found_error"
@@ -563,32 +897,56 @@
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["calculate_net_amount", "customer_id"],
-      "invalid_examples": ["calculateNetAmount", "CustomerId"]
+      "valid_examples": [
+        "calculate_net_amount",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "CustomerId"
+      ]
     },
     "python-generator": {
       "description": "Python generator function or iterator factory yielding items over time.",
       "form": "iter_snake_case or stream_snake_case",
       "pattern": "^(?:iter|stream)_[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Python standard library and idiom",
-      "valid_examples": ["iter_invoices", "stream_chunks"],
-      "invalid_examples": ["get_invoices", "invoices_generator"]
+      "valid_examples": [
+        "iter_invoices",
+        "stream_chunks"
+      ],
+      "invalid_examples": [
+        "get_invoices",
+        "invoices_generator"
+      ]
     },
     "python-method": {
       "description": "Python method.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["calculate_net_amount", "customer_id"],
-      "invalid_examples": ["calculateNetAmount", "CustomerId"]
+      "valid_examples": [
+        "calculate_net_amount",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "CustomerId"
+      ]
     },
     "python-module": {
       "description": "Ordinary importable Python module filename.",
       "form": "snake_case.py",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*\\.py$",
       "basis": "PEP 8",
-      "valid_examples": ["rebuild_index.py", "ontology_parser.py"],
-      "invalid_examples": ["rebuild-index.py", "OntologyParser.py"],
+      "valid_examples": [
+        "rebuild_index.py",
+        "ontology_parser.py"
+      ],
+      "invalid_examples": [
+        "rebuild-index.py",
+        "OntologyParser.py"
+      ],
       "notes": [
         "Special modules such as __init__.py and generated or framework-required modules are scoped exceptions."
       ]
@@ -598,8 +956,14 @@
       "form": "lowercase or snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["billing", "customer_registry"],
-      "invalid_examples": ["CustomerRegistry", "customer-registry"],
+      "valid_examples": [
+        "billing",
+        "customer_registry"
+      ],
+      "invalid_examples": [
+        "CustomerRegistry",
+        "customer-registry"
+      ],
       "notes": [
         "Prefer a short all-lowercase name; underscores are allowed when needed for readability."
       ]
@@ -609,48 +973,85 @@
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["calculate_net_amount", "customer_id"],
-      "invalid_examples": ["calculateNetAmount", "CustomerId"]
+      "valid_examples": [
+        "calculate_net_amount",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "CustomerId"
+      ]
     },
     "python-private-function": {
       "description": "Non-public Python function or method with one conventional leading underscore.",
       "form": "_snake_case",
       "pattern": "^_[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["_parse_header", "_load_registry"],
-      "invalid_examples": ["__parse_header", "_parseHeader"]
+      "valid_examples": [
+        "_parse_header",
+        "_load_registry"
+      ],
+      "invalid_examples": [
+        "__parse_header",
+        "_parseHeader"
+      ]
     },
     "python-private-variable": {
       "description": "Non-public Python variable with one conventional leading underscore.",
       "form": "_snake_case",
       "pattern": "^_[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["_cache", "_customer_id"],
-      "invalid_examples": ["__cache", "_customerId"]
+      "valid_examples": [
+        "_cache",
+        "_customer_id"
+      ],
+      "invalid_examples": [
+        "__cache",
+        "_customerId"
+      ]
     },
     "python-script": {
       "description": "Standalone executable Python script, not an ordinary importable module.",
       "form": "kebab-case.py",
       "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*\\.py$",
       "basis": "Explicit house policy",
-      "valid_examples": ["rebuild-index.py", "verify-ontology.py"],
-      "invalid_examples": ["rebuild_index.py", "Rebuild-Index.py"]
+      "valid_examples": [
+        "rebuild-index.py",
+        "verify-ontology.py"
+      ],
+      "invalid_examples": [
+        "rebuild_index.py",
+        "Rebuild-Index.py"
+      ]
     },
     "python-type-var": {
       "description": "Python TypeVar or generic type parameter.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "PEP 484 and PEP 695",
-      "valid_examples": ["T", "KeyT", "ItemType"],
-      "invalid_examples": ["item_type", "type_t"]
+      "valid_examples": [
+        "T",
+        "KeyT",
+        "ItemType"
+      ],
+      "invalid_examples": [
+        "item_type",
+        "type_t"
+      ]
     },
     "python-variable": {
       "description": "Python variable.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "PEP 8",
-      "valid_examples": ["calculate_net_amount", "customer_id"],
-      "invalid_examples": ["calculateNetAmount", "CustomerId"]
+      "valid_examples": [
+        "calculate_net_amount",
+        "customer_id"
+      ],
+      "invalid_examples": [
+        "calculateNetAmount",
+        "CustomerId"
+      ]
     },
     "react-component": {
       "description": "React component function or filename.",
@@ -662,95 +1063,164 @@
         "UserProfile.jsx",
         "OrderSummary.tsx"
       ],
-      "invalid_examples": ["customerInvoiceCard", "user-profile.jsx"]
+      "invalid_examples": [
+        "customerInvoiceCard",
+        "user-profile.jsx"
+      ]
     },
     "react-event-handler": {
       "description": "Component internal event handler function.",
       "form": "handle + PascalCase",
       "pattern": "^handle[A-Z][A-Za-z0-9]*$",
       "basis": "React community convention",
-      "valid_examples": ["handleInvoiceSubmit", "handleCustomerSelect"],
-      "invalid_examples": ["onInvoiceSubmit", "invoiceSubmitCallback"]
+      "valid_examples": [
+        "handleInvoiceSubmit",
+        "handleCustomerSelect"
+      ],
+      "invalid_examples": [
+        "onInvoiceSubmit",
+        "invoiceSubmitCallback"
+      ]
     },
     "react-event-prop": {
       "description": "Event handler prop on a component.",
       "form": "on + PascalCase",
       "pattern": "^on[A-Z][A-Za-z0-9]*$",
       "basis": "React community convention / DOM idiom",
-      "valid_examples": ["onInvoiceSubmit", "onCustomerSelect"],
-      "invalid_examples": ["handleInvoiceSubmit", "invoiceSubmittedHandler"]
+      "valid_examples": [
+        "onInvoiceSubmit",
+        "onCustomerSelect"
+      ],
+      "invalid_examples": [
+        "handleInvoiceSubmit",
+        "invoiceSubmittedHandler"
+      ]
     },
     "react-hook": {
       "description": "React custom hook.",
       "form": "use + PascalCase",
       "pattern": "^use[A-Z][A-Za-z0-9]*$",
       "basis": "React Rules of Hooks",
-      "valid_examples": ["useCustomerAccount", "useWindowDimensions"],
-      "invalid_examples": ["customerAccountHook", "usecustomerAccount"]
+      "valid_examples": [
+        "useCustomerAccount",
+        "useWindowDimensions"
+      ],
+      "invalid_examples": [
+        "customerAccountHook",
+        "usecustomerAccount"
+      ]
     },
     "rust-constant": {
       "description": "Rust constant.",
       "form": "SCREAMING_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["DefaultTimeoutSeconds", "default_timeout_seconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "DefaultTimeoutSeconds",
+        "default_timeout_seconds"
+      ]
     },
     "rust-function": {
       "description": "Rust function.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["invoice_parser", "calculate_net_amount"],
-      "invalid_examples": ["invoiceParser", "InvoiceParser"]
+      "valid_examples": [
+        "invoice_parser",
+        "calculate_net_amount"
+      ],
+      "invalid_examples": [
+        "invoiceParser",
+        "InvoiceParser"
+      ]
     },
     "rust-local": {
       "description": "Rust local binding.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["invoice_parser", "calculate_net_amount"],
-      "invalid_examples": ["invoiceParser", "InvoiceParser"]
+      "valid_examples": [
+        "invoice_parser",
+        "calculate_net_amount"
+      ],
+      "invalid_examples": [
+        "invoiceParser",
+        "InvoiceParser"
+      ]
     },
     "rust-method": {
       "description": "Rust method.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["invoice_parser", "calculate_net_amount"],
-      "invalid_examples": ["invoiceParser", "InvoiceParser"]
+      "valid_examples": [
+        "invoice_parser",
+        "calculate_net_amount"
+      ],
+      "invalid_examples": [
+        "invoiceParser",
+        "InvoiceParser"
+      ]
     },
     "rust-module": {
       "description": "Rust module.",
       "form": "snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["invoice_parser", "calculate_net_amount"],
-      "invalid_examples": ["invoiceParser", "InvoiceParser"]
+      "valid_examples": [
+        "invoice_parser",
+        "calculate_net_amount"
+      ],
+      "invalid_examples": [
+        "invoiceParser",
+        "InvoiceParser"
+      ]
     },
     "rust-static": {
       "description": "Rust static.",
       "form": "SCREAMING_SNAKE_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["DefaultTimeoutSeconds", "default_timeout_seconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "DefaultTimeoutSeconds",
+        "default_timeout_seconds"
+      ]
     },
     "rust-trait": {
       "description": "Rust trait.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customer_registry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "Customer_Registry"
+      ]
     },
     "rust-type": {
       "description": "Rust type.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Rust API Guidelines",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customer_registry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "Customer_Registry"
+      ]
     },
     "sql-check-constraint": {
       "description": "SQL check constraint.",
@@ -761,23 +1231,38 @@
         "ck_invoice__net_amount_nonnegative",
         "ck_person__birth_date_not_future"
       ],
-      "invalid_examples": ["check_invoice_amount", "CK_INVOICE_AMOUNT"]
+      "invalid_examples": [
+        "check_invoice_amount",
+        "CK_INVOICE_AMOUNT"
+      ]
     },
     "sql-column": {
       "description": "SQL column under this skill's explicit physical naming profile.",
       "form": "lower_snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["customer_id", "created_at_epoch_ms"],
-      "invalid_examples": ["Customer", "customer-id"]
+      "valid_examples": [
+        "customer_id",
+        "created_at_epoch_ms"
+      ],
+      "invalid_examples": [
+        "Customer",
+        "customer-id"
+      ]
     },
     "sql-foreign-key-constraint": {
       "description": "SQL foreign-key constraint.",
       "form": "fk_<child_table>__<parent_table>",
       "pattern": "^fk_[a-z][a-z0-9]*(?:_[a-z0-9]+)*__[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["fk_invoice__customer", "fk_invoice_line__invoice"],
-      "invalid_examples": ["fk_invoice_customer", "invoice_customer_fk"]
+      "valid_examples": [
+        "fk_invoice__customer",
+        "fk_invoice_line__invoice"
+      ],
+      "invalid_examples": [
+        "fk_invoice_customer",
+        "invoice_customer_fk"
+      ]
     },
     "sql-index": {
       "description": "SQL index.",
@@ -788,23 +1273,38 @@
         "ix_invoice__customer_id_created_at",
         "ix_customer__family_name"
       ],
-      "invalid_examples": ["idx_invoice_customer", "IX_INVOICE"]
+      "invalid_examples": [
+        "idx_invoice_customer",
+        "IX_INVOICE"
+      ]
     },
     "sql-primary-key-constraint": {
       "description": "SQL primary-key constraint.",
       "form": "pk_<table>",
       "pattern": "^pk_[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["pk_invoice", "pk_customer_account"],
-      "invalid_examples": ["invoice_pk", "PK_INVOICE"]
+      "valid_examples": [
+        "pk_invoice",
+        "pk_customer_account"
+      ],
+      "invalid_examples": [
+        "invoice_pk",
+        "PK_INVOICE"
+      ]
     },
     "sql-schema": {
       "description": "SQL schema under this skill's explicit physical naming profile.",
       "form": "lower_snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["billing", "inventory"],
-      "invalid_examples": ["Customer", "customer-id"],
+      "valid_examples": [
+        "billing",
+        "inventory"
+      ],
+      "invalid_examples": [
+        "Customer",
+        "customer-id"
+      ],
       "notes": [
         "Schema concepts represent bounded contexts or namespaces under the selected profile."
       ]
@@ -814,8 +1314,14 @@
       "form": "lower_snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["customer", "customer_account"],
-      "invalid_examples": ["Customer", "customer-id"],
+      "valid_examples": [
+        "customer",
+        "customer_account"
+      ],
+      "invalid_examples": [
+        "Customer",
+        "customer-id"
+      ],
       "notes": [
         "Table and view concepts are singular by semantic policy; plurality is not mechanically decidable by this regex."
       ]
@@ -829,15 +1335,24 @@
         "uq_customer__external_identifier",
         "uq_invoice__issuer_id_number"
       ],
-      "invalid_examples": ["uk_customer_external_identifier", "UQ_CUSTOMER"]
+      "invalid_examples": [
+        "uk_customer_external_identifier",
+        "UQ_CUSTOMER"
+      ]
     },
     "sql-view": {
       "description": "SQL view row concept under this skill's explicit physical naming profile.",
       "form": "lower_snake_case",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$",
       "basis": "Explicit house policy",
-      "valid_examples": ["active_customer", "customer_summary"],
-      "invalid_examples": ["Customer", "customer-id"],
+      "valid_examples": [
+        "active_customer",
+        "customer_summary"
+      ],
+      "invalid_examples": [
+        "Customer",
+        "customer-id"
+      ],
       "notes": [
         "Table and view concepts are singular by semantic policy; plurality is not mechanically decidable by this regex."
       ]
@@ -847,8 +1362,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"],
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ],
       "notes": [
         "The checker cannot establish grammatical quality at the call site or correct mutating/non-mutating pair semantics."
       ]
@@ -858,8 +1379,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"],
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ],
       "notes": [
         "The checker cannot establish grammatical quality at the call site or correct mutating/non-mutating pair semantics."
       ]
@@ -869,8 +1396,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"],
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ],
       "notes": [
         "The checker cannot establish grammatical quality at the call site or correct mutating/non-mutating pair semantics."
       ]
@@ -880,8 +1413,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"],
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ],
       "notes": [
         "The checker cannot establish grammatical quality at the call site or correct mutating/non-mutating pair semantics."
       ]
@@ -891,8 +1430,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"],
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ],
       "notes": [
         "The checker cannot establish grammatical quality at the call site or correct mutating/non-mutating pair semantics."
       ]
@@ -902,24 +1447,42 @@
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["CustomerRegistry", "InvoiceReading"],
-      "invalid_examples": ["customerRegistry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReading"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "Customer_Registry"
+      ]
     },
     "swift-type": {
       "description": "Swift type.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Swift API Design Guidelines",
-      "valid_examples": ["CustomerRegistry", "InvoiceReading"],
-      "invalid_examples": ["customerRegistry", "Customer_Registry"]
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReading"
+      ],
+      "invalid_examples": [
+        "customerRegistry",
+        "Customer_Registry"
+      ]
     },
     "typescript-declaration-file": {
       "description": "Hand-authored TypeScript declaration filename.",
       "form": "snake_case.d.ts",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*\\.d\\.ts$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["customer_registry.d.ts", "invoice_api.d.ts"],
-      "invalid_examples": ["customer-registry.d.ts", "CustomerRegistry.d.ts"],
+      "valid_examples": [
+        "customer_registry.d.ts",
+        "invoice_api.d.ts"
+      ],
+      "invalid_examples": [
+        "customer-registry.d.ts",
+        "CustomerRegistry.d.ts"
+      ],
       "notes": [
         "Generated or package-owned declaration filenames may be externally governed exceptions."
       ]
@@ -929,56 +1492,98 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "typescript-global-constant": {
       "description": "Global TypeScript constant value under the selected profile.",
       "form": "CONSTANT_CASE",
       "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["DEFAULT_TIMEOUT_SECONDS", "MAX_RETRY_COUNT"],
-      "invalid_examples": ["DefaultTimeoutSeconds", "default_timeout_seconds"]
+      "valid_examples": [
+        "DEFAULT_TIMEOUT_SECONDS",
+        "MAX_RETRY_COUNT"
+      ],
+      "invalid_examples": [
+        "DefaultTimeoutSeconds",
+        "default_timeout_seconds"
+      ]
     },
     "typescript-method": {
       "description": "TypeScript method.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "typescript-parameter": {
       "description": "TypeScript parameter.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "typescript-property": {
       "description": "TypeScript property.",
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     },
     "typescript-source-file": {
       "description": "TypeScript source filename under the selected Google TypeScript profile.",
       "form": "snake_case.ts or snake_case.tsx",
       "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*\\.(?:ts|tsx)$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["invoice_parser.ts", "customer_registry.tsx"],
-      "invalid_examples": ["invoice-parser.ts", "InvoiceParser.ts"]
+      "valid_examples": [
+        "invoice_parser.ts",
+        "customer_registry.tsx"
+      ],
+      "invalid_examples": [
+        "invoice-parser.ts",
+        "InvoiceParser.ts"
+      ]
     },
     "typescript-type": {
       "description": "TypeScript class, interface, type alias, enum, or decorator.",
       "form": "UpperCamelCase",
       "pattern": "^[A-Z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["CustomerRegistry", "InvoiceReader"],
-      "invalid_examples": ["customer_registry", "customer-registry"],
+      "valid_examples": [
+        "CustomerRegistry",
+        "InvoiceReader"
+      ],
+      "invalid_examples": [
+        "customer_registry",
+        "customer-registry"
+      ],
       "notes": [
         "A legacy interface prefix such as ICustomerRegistry is lexically UpperCamelCase but violates the selected profile semantically; a case-only regex cannot reject it."
       ]
@@ -988,8 +1593,14 @@
       "form": "lowerCamelCase",
       "pattern": "^[a-z][A-Za-z0-9]*$",
       "basis": "Selected Google TypeScript Style profile",
-      "valid_examples": ["calculateNetAmount", "customerId"],
-      "invalid_examples": ["calculate_net_amount", "CustomerId"]
+      "valid_examples": [
+        "calculateNetAmount",
+        "customerId"
+      ],
+      "invalid_examples": [
+        "calculate_net_amount",
+        "CustomerId"
+      ]
     }
   }
 }

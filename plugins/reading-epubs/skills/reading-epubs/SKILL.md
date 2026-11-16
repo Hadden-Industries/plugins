@@ -5,7 +5,7 @@ license: MPL-2.0
 compatibility: Requires Python 3.9+ to run bundled scripts and Pandoc for EPUB conversion; bundled installation guidance covers Windows, macOS, and Linux.
 metadata:
   category: document-processing
-  version: "3.0.0"
+  version: "3.0.1"
 ---
 
 # Reading EPUBs

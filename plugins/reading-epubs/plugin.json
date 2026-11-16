@@ -7,7 +7,7 @@
   },
   "license": "MPL-2.0",
   "repository": "https://github.com/Hadden-Industries/plugins",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "extensions": {
     "com.openai": {
       "interface": {
